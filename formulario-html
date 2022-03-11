@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Formulários André Santos
+    </title>
+</head>
+
+<body>
+
+
+    <h1>Formulário</h1>
+    André Santos
+    <p>
+    <form action="primeira-pagina-receber-dados" method="POST">
+        <fieldset>
+            <legend>Dados Pessoais</legend />
+            <label for="Nome">Nome:</label />
+            <input type="text" name="Nome" />
+            <br>
+            <label for="Endereço">Endereço:</label>
+            <input type="text" name="Endereço">
+            <br>
+            <label for="Cidade">Cidade:</label>
+            <input type="text" name="Cidade">
+            <br>
+            <label for="Estado">Estado:</label>
+            <select name="Estado">
+                <option value="1">DF</option>
+                <option value="2">SC</option>
+                <option value="3">SP</option>
+                <option value="4">BH</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label for="Natureza">Natureza do Cargo</label>
+            <br>
+            <input type="radio" name="Natureza" value="Gerencia">Gerência
+            <input type="radio" name="Natureza" value="Financeiro">Financeiro
+            <input type="radio" name="Natureza" value="Recepçao">Recepção
+            <input type="radio" name="Natureza" value="Administrativo">Administrativo
+            <input type="radio" name="Natureza" value="Juridico">Jurídico
+            <br><br>
+            <label for="Area">Área de Interesse </label>
+            <br>
+            <input type="checkbox" name="Area" value="1">Computação
+            <input type="checkbox" name="Area" value="2">Biologia
+            <input type="checkbox" name="Area" value="3">Meio Ambiente
+            <input type="checkbox" name="Area" value="4">Engenharia
+            <input type="checkbox" name="Area" value="5">História
+            <div>
+                <label for="caixa">Mini-Curriculo:</label>
+                <textarea name="caixa" cols="40" rows="5"></textarea>
+            </div>
+
+        </fieldset>
+        <p>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+
+</html>
